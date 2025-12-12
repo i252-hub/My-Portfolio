@@ -221,11 +221,30 @@ font-family: "Jomolhari", serif;
   }
 }
 
+.portfolio-projects-image > img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.portfolio-projects-image > img:first-of-type{
+   @media(max-width:1500px){
+   display: none;
+   }
+}
+.portfolio-projects-image > img:nth-last-of-type{
+   @media(min-width:1500px){
+   display: none;
+   }
+}
 
 .portfolio-projects-image{
+  position: relative;
   width: 50%;
   background: white;
   min-height: 563px;
+  
    @media(max-width:991px){
     flex-direction: column;
     width:90%;
@@ -323,7 +342,7 @@ padding-bottom: 3rem;
   display: flex;
   justify-content: center;
 }
-.portfolio-projects-othertitle > p:nth-of-type(2), .portfolio-projects-othercontent > p:nth-of-type(2){
+.portfolio-projects-othertitle > p:nth-of-type(2), .portfolio-projects-othercontent > a{
   width: 20%;
   display: flex;
   justify-content: center;
@@ -347,7 +366,7 @@ padding-bottom: 3rem;
   margin-top: 1rem;
 }
 
-.portfolio-projects-othercontent p, .portfolio-projects-othertitle p{
+.portfolio-projects-othercontent p, .portfolio-projects-othertitle p, .portfolio-projects-othertitle a{
   color: white;
 }
 
