@@ -423,13 +423,13 @@ footer .portfolio-footer-subtitle{
   align-items: center;
 }
 
-.portfolio-footer-links > p:nth-of-type(2){
+.portfolio-footer-links > a{
 display: flex;
 justify-content: end;
 margin-right: 1rem;
 }
 
-.portfolio-footer-links > p:first-of-type{
+.portfolio-footer-links > p{
 margin-left: 1rem;
 }
 
