@@ -80,7 +80,7 @@ transform: translate(20px, 20px);
 }
 
 section.portfolio-home h1{
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 200;
 }
 
@@ -128,6 +128,7 @@ section.portfolio-home .portfolio-home-text{
    
 }
 
+
 section.portfolio-home .portfolio-home-subtitle{
      display: flex;
      justify-content: center;
@@ -167,44 +168,16 @@ section.portfolio-home .portfolio-home-backtext > p{
 
 
 
-@media(max-width: 1390px){
+@media(max-width: 1200px){
 section.portfolio-home .portfolio-home-name{
     flex-direction: column;
+    
 }
-}
-
-@media(max-width:1450px){
-section.portfolio-home .portfolio-home-name, section.portfolio-home .portfolio-home-desc{
-position: relative;
-top: 15rem;
-}
-}
-
-@media(max-width:1300px){
-  
-  section.portfolio-home .portfolio-home-subtitle > p{
-    margin-left: 0;
-    text-align: center;
-  }
-}
-
-@media(max-width:1300px){
-  section.portfolio-home .portfolio-home-subtitle{
-    bottom:2rem;
-  }
-}
-
-@media(max-width:575px){
-  section.portfolio-home .portfolio-home-desc{
-    text-align: center !important;
-  }
-}
-
-@media(max-width:1000px){
 section.portfolio-home h1{
-    text-align: center !important;
-  }
+  text-align: center;
 }
+}
+
 
 /* projects */
 
@@ -213,12 +186,23 @@ section.portfolio-services{
   background: #381407;
 }
 
+.portfolio-services-message{
+min-height: 340px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
 .portfolio-services-container{
   width: 100%;
   min-height: 40vh;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3,1fr);
   color: white;
+ gap: 1rem;
+ padding: 2rem;
+
 }
 
 .portfolio-services-box{
@@ -226,18 +210,13 @@ section.portfolio-services{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+    gap: 1rem;
+    border: white 8px solid;
+    border-color: #3d1809;
+;
 }
 
-.portfolio-services-message{
-  min-height: 561px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} 
-
-.portfolio-services-message span, .portfolio-services-desc h1{
+.portfolio-projects-services span, .portfolio-services-desc h1{
   font-size: 96px;
 font-family: "Jomolhari", serif;
 }
@@ -249,69 +228,6 @@ font-family: "Jomolhari", serif;
 }
 
 
-
-
-
-
-   
-  
-
-
-.portfolio-projects-desc > p{
-  font-size: 32px;
-
-}
-
-
-.portfolio-projects-desc > p:first-of-type{
- font-family: "Kalam", cursive;
-}
-
-.portfolio-projects-links > ul li{
-font-family: "KoHo", sans-serif;
-}
-
-
-
-.portfolio-projects-links > button, .portfolio-contact .portfolio-contact-btncontainer > button{
-  padding: 5px 20px 5px 20px;
-  background: transparent;
-  border: white solid 3px;
-  border-radius: 50px;
- cursor: pointer;
-}
-.portfolio-projects-links > button{
- color: white;
-}
-
-.portfolio-projects-links > button a, .portfolio-contact .portfolio-contact-btncontainer > button a{
- display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-decoration: none;
-  gap:2rem;
-  }
-  .portfolio-projects-links > button a{
- color: white;
-  }
-
-  .portfolio-contact .portfolio-contact-btncontainer > button a{
-    color:#000 !important;
-  }
-
-  .portfolio-svg path{
-    fill: black;
-  }
-
-.portfolio-projects-links{
-  justify-content: space-between;
-  display: flex;
-  border: none;
-  border-top: white solid 1px;
-  padding-top: 2rem;
-  margin-top: 1rem;
-  margin-right: 3rem;
-}
 
 .portfolio-projects-other{
   display: flex;
@@ -376,6 +292,8 @@ section.portfolio-contact{
   align-items: center;
 }
 
+
+
 .portfolio-contact p{
   font-size: 32px;
  font-family: "KoHo", sans-serif;
@@ -388,6 +306,16 @@ section.portfolio-contact{
 .portfolio-contact-btncontainer{
   display: flex;
   gap: 2rem;
+}
+
+.portfolio-contact-btncontainer > button{
+background:#F3C56A;
+border-radius: 2rem;
+width: 150px;
+display: flex;
+align-items: center;
+justify-content: center;
+
 }
 
 footer{
@@ -422,6 +350,8 @@ footer .portfolio-footer-subtitle{
 display: flex;
 justify-content: end;
 margin-right: 1rem;
+width: 350px;
+margin-bottom: 1rem;
 }
 
 .portfolio-footer-links > p{
