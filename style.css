@@ -215,6 +215,10 @@ min-height: 340px;
 ;
 }
 
+.portfolio-services-box ul li{
+  list-style: disc;
+}
+
 .portfolio-projects-services span, .portfolio-services-desc h1{
   font-size: 96px;
 font-family: "Jomolhari", serif;
